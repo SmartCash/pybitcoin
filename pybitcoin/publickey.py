@@ -168,6 +168,8 @@ class BitcoinPublicKey():
 class LitecoinPublicKey(BitcoinPublicKey):
     _version_byte = 48
 
+class SmartcashPublicKey(BitcoinPublicKey):
+    _version_byte = 63
 
 class NamecoinPublicKey(BitcoinPublicKey):
     _version_byte = 52

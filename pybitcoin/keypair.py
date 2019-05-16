@@ -24,7 +24,7 @@ from .passphrases import create_passphrase
 
 
 class BitcoinKeypair():
-    """ NOTE: This object has been replaced by the BitcoinPrivateKey and 
+    """ NOTE: This object has been replaced by the BitcoinPrivateKey and
         BitcoinPublicKey objects and is set to be deprecated at a future date.
     """
 
@@ -155,6 +155,8 @@ class BitcoinKeypair():
 class LitecoinKeypair(BitcoinKeypair):
     _pubkeyhash_version_byte = 48
 
+class SmartcashKeypair(BitcoinKeypair):
+    _pubkeyhash_version_byte = 63
 
 class NamecoinKeypair(BitcoinKeypair):
     _pubkeyhash_version_byte = 52

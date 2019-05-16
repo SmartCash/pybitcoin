@@ -143,6 +143,8 @@ class BitcoinPrivateKey():
 class LitecoinPrivateKey(BitcoinPrivateKey):
     _pubkeyhash_version_byte = 48
 
+class SmartcashPrivateKey(BitcoinPrivateKey):
+    _pubkeyhash_version_byte = 63
 
 class NamecoinPrivateKey(BitcoinPrivateKey):
     _pubkeyhash_version_byte = 52
